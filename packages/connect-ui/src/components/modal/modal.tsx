@@ -1,12 +1,12 @@
 import { Component, h, Prop, State, Element } from '@stencil/core';
 import CloseIcon from './assets/close-icon.svg';
-import LeatherLogo from './assets/leather-logo.svg';
+//import LeatherLogo from './assets/leather-logo.svg';
 import XverseWalletLogo from './assets/xverse-wallet-logo.svg';
 import { getBrowser, getPlatform } from './utils';
 
 const CHROME_BROWSER_URL = 'https://www.google.com/chrome/';
-const BRAVE_BROWSER_URL = 'https://brave.com/';
-const FIREFOX_BROWSER_URL = 'https://www.mozilla.org/en-US/';
+//const BRAVE_BROWSER_URL = 'https://brave.com/';
+//const FIREFOX_BROWSER_URL = 'https://www.mozilla.org/en-US/';
 const CHROME_STORE_URL =
   'https://chrome.google.com/webstore/detail/hiro-wallet/ldinpeekobnhjjdofggfgjlcehhmanlj/';
 const FIREFOX_STORE_URL = 'https://addons.mozilla.org/en-US/firefox/addon/hiro-wallet/';
@@ -54,7 +54,7 @@ export class Modal {
       this.hasOpenedInstallXverse = true;
       return;
     } else {
-      window.open('https://www.hiro.so/wallet/install-web', '_blank');
+      window.open('https://www.xverse.app/download', '_blank'); //swapped for xverse due to satsconnect
     }
     this.hasOpenedInstall = true;
   }
