@@ -1,5 +1,5 @@
 {
-  "name": "@stacks/connect-react",
+  "name": "@stacksordinals/connect-react",
   "version": "22.2.1",
   "license": "MIT",
   "prettier": "@stacks/prettier-config",

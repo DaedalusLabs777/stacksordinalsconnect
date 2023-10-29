@@ -1,5 +1,5 @@
 {
-  "name": "@stacks/connect",
+  "name": "@stacksordinals/connect",
   "version": "7.4.1",
   "license": "MIT",
   "prettier": "@stacks/prettier-config",
