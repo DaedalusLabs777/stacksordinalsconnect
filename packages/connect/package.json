@@ -1,6 +1,6 @@
 {
   "name": "@stacksordinals/connect",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "license": "MIT",
   "prettier": "@stacks/prettier-config",
   "scripts": {

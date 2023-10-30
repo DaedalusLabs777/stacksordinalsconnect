@@ -8,6 +8,8 @@ export const showConnect = (
   authOptions: AuthOptions,
   provider: StacksProvider = getStacksProvider()
 ) => {
+  console.log('StacksProvider:', provider); // Added console log to log providers
+
   if (provider) {
     void authenticate(authOptions, provider);
     return;
