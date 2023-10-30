@@ -1,6 +1,6 @@
 {
   "name": "@stacksordinals/connect",
-  "version": "7.4.1",
+  "version": "8.0.2",
   "license": "MIT",
   "prettier": "@stacks/prettier-config",
   "scripts": {
@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@stacks/auth": "^6.1.1",
-    "@stacksordinals/connect-ui": "6.1.2",
     "@stacks/network": "^6.1.1",
     "@stacks/profile": "^6.1.1",
     "@stacks/transactions": "^6.1.1",
+    "@stacksordinals/connect-ui": "^6.1.2",
     "jsontokens": "^4.0.1"
   },
   "sideEffects": false,
