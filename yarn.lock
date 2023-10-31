@@ -972,15 +972,22 @@
     "@types/bn.js" "^5.1.0"
     "@types/node" "^18.0.4"
 
+"@stacks/connect-ui@6.1.2":
+  "resolved" "file:packages/connect-ui"
+  "version" "6.1.2"
+  dependencies:
+    "@stencil/core" "^2.17.1"
+
 "@stacks/connect@7.4.1":
-  "resolved" "file:packages/connect"
-  "version" "8.0.1"
+  "integrity" "sha512-kvF7Fnx8oMHNi/9At6UI6kThey+gYlYlbtsxhNL2VqflReXI8z3EndaMJ1WrD55ePIOoydAzV/Fx0rdNFjd4rQ=="
+  "resolved" "https://registry.npmjs.org/@stacks/connect/-/connect-7.4.1.tgz"
+  "version" "7.4.1"
   dependencies:
     "@stacks/auth" "^6.1.1"
+    "@stacks/connect-ui" "6.1.2"
     "@stacks/network" "^6.1.1"
     "@stacks/profile" "^6.1.1"
     "@stacks/transactions" "^6.1.1"
-    "@stacksordinals/connect-ui" "^6.1.2"
     "jsontokens" "^4.0.1"
 
 "@stacks/encryption@^6.7.0":
@@ -1052,6 +1059,13 @@
     "c32check" "^2.0.0"
     "lodash.clonedeep" "^4.5.0"
 
+"@stacksordinals/connect-react@file:/Users/richardlu/Documents/Coding/stacksordinalsconnect/packages/connect-react":
+  "resolved" "file:packages/connect-react"
+  "version" "22.2.1"
+  dependencies:
+    "@stacks/connect" "7.4.1"
+    "jsontokens" "^4.0.1"
+
 "@stacksordinals/connect-ui@^6.1.2", "@stacksordinals/connect-ui@file:/Users/richardlu/Documents/Coding/stacksordinalsconnect/packages/connect-ui":
   "resolved" "file:packages/connect-ui"
   "version" "6.1.2"
@@ -1060,7 +1074,7 @@
 
 "@stacksordinals/connect@file:/Users/richardlu/Documents/Coding/stacksordinalsconnect/packages/connect":
   "resolved" "file:packages/connect"
-  "version" "8.0.1"
+  "version" "8.0.5"
   dependencies:
     "@stacks/auth" "^6.1.1"
     "@stacks/network" "^6.1.1"
@@ -2191,6 +2205,9 @@
     "supports-color" "^8.1.1"
     "tree-kill" "^1.2.2"
     "yargs" "^17.7.2"
+
+"connect-ui-loader@file:/Users/richardlu/Documents/Coding/stacksordinalsconnect/packages/connect-ui/loader":
+  "resolved" "file:packages/connect-ui/loader"
 
 "console-control-strings@^1.0.0", "console-control-strings@^1.1.0", "console-control-strings@~1.1.0":
   "integrity" "sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ=="

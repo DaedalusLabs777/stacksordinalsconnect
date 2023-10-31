@@ -8,8 +8,8 @@
   "prettier": "@stacks/prettier-config",
   "scripts": {
     "build": "lerna run build",
-    "build:connect": "lerna run build --scope @stacks/connect",
-    "build:connect-ui": "lerna run build --scope @stacks/connect-ui",
+    "build:connect": "lerna run build --scope @stacksordinals/connect",
+    "build:connect-ui": "lerna run build --scope @stacksordinals/connect-ui",
     "build:docs": "typedoc && mkdir -p docs/.github && cp -r .github/img docs/.github/img",
     "deploy-contracts": "lerna run deploy-contracts --stream",
     "postinstall": "concurrently 'husky install .github/.husky' 'yarn build:connect-ui'",
