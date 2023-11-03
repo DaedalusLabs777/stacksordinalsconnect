@@ -30,7 +30,6 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@stacks/eslint-config": "^2.0.0",
     "@stacks/prettier-config": "^0.0.10",
-    "@stencil-community/eslint-plugin": "^0.5.0",
     "concurrently": "^8.2.1",
     "eslint": "^8.49.0",
     "eslint-import-resolver-typescript": "^3.6.0",

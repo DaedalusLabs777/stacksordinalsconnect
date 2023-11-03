@@ -1,6 +1,6 @@
 {
   "name": "@stacksordinals/connect",
-  "version": "8.0.5",
+  "version": "8.0.9",
   "license": "MIT",
   "prettier": "@stacks/prettier-config",
   "scripts": {
@@ -22,7 +22,7 @@
     "access": "public"
   },
   "files": [
-    "dist"
+    "dist", "src"
   ],
   "typings": "dist/types/index.d.ts",
   "main": "dist/index.js",
