@@ -49,5 +49,7 @@ declare global {
   interface Window {
     BlockstackProvider?: BlockstackProvider;
     StacksProvider?: StacksProvider;
+    BitcoinProvider?: any;
+    satsConnect: any;
   }
 }
