@@ -6,6 +6,7 @@ import { FinishedTxPayload, SponsoredFinishedTxPayload } from './transactions';
 
 export interface StacksProvider {
   /** @deprecated */
+  isHiroWallet?: undefined;
   getURL: () => Promise<string>;
   /**
    * Make a transaction request
@@ -45,11 +46,14 @@ export interface StacksProvider {
 
 export type BlockstackProvider = StacksProvider;
 
+
+
 declare global {
   interface Window {
     BlockstackProvider?: BlockstackProvider;
     StacksProvider?: StacksProvider;
     BitcoinProvider?: any;
-    satsConnect: any;
   }
 }
+console.log('Window:', Window); // Added console log to log providers
+

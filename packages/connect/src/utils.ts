@@ -1,7 +1,35 @@
 export function getStacksProvider() {
+  const provider = (window.StacksProvider || window.BlockstackProvider);
+  console.log("Xverse provider found:", provider.getProductInfo());
+  console.log('Bitcoin provider',window.BitcoinProvider)
+  console.log('stacksprovider', window.StacksProvider);
 
-  const provider = window.StacksProvider || window.BlockstackProvider;
+  if (provider && provider.getProductInfo) {
+    try {
+      const productInfo = provider.getProductInfo();
+      if (productInfo && productInfo.name === "Xverse Wallet") {
+        console.log("Xverse provider found:", productInfo);
+        console.log('Bitcoin provider',window.BitcoinProvider)
+        console.log('stacksprovider', window.StacksProvider);
+ 
+        return provider;
+      } else {
+        console.log("The provider is not Xverse Wallet");
+        console.log('Bitcoin provider',window.BitcoinProvider)
+        console.log('stacksprovider', window.StacksProvider);
+        return undefined;
+      }
+    } catch (error) {
+      console.error("Error getting product info from provider", error);
+      return undefined;
+    }
+  } else {
+    console.log("No suitable provider with getProductInfo method found");
+    return undefined;
+  }
+}
 
+/*
   if (provider && provider.getProductInfo) {
     try {
       const productInfo = provider.getProductInfo();
@@ -27,7 +55,7 @@ export function getStacksProvider() {
     return undefined;
   }
 }
-
+*/
 /*
   if (typeof window.BitcoinProvider !== 'undefined') {
     console.log('Xverse Wallet (BitcoinProvider) is installed.');
